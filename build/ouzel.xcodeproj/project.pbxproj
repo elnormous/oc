@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		304A8E501C237C70008B1151 /* ouzel.h in Headers */ = {isa = PBXBuildFile; fileRef = 304A8E2A1C237C70008B1151 /* ouzel.h */; };
+		301392D92023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
+		301392DA2023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
+		301392DB2023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
+		301392DC2023F77A001CAC35 /* ocengine.c in Sources */ = {isa = PBXBuildFile; fileRef = 301392D82023F77A001CAC35 /* ocengine.c */; };
+		301392DD2023F77A001CAC35 /* ocengine.c in Sources */ = {isa = PBXBuildFile; fileRef = 301392D82023F77A001CAC35 /* ocengine.c */; };
+		301392DE2023F77A001CAC35 /* ocengine.c in Sources */ = {isa = PBXBuildFile; fileRef = 301392D82023F77A001CAC35 /* ocengine.c */; };
+		304A8E501C237C70008B1151 /* oc.h in Headers */ = {isa = PBXBuildFile; fileRef = 304A8E2A1C237C70008B1151 /* oc.h */; };
 		3093EE832022A020006D1667 /* default_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3093EE812022A020006D1667 /* default_config.h */; };
 		3093EE872022A25C006D1667 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3093EE862022A25C006D1667 /* main.c */; };
 		3093EE8B2022A2C7006D1667 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3093EE8A2022A2C7006D1667 /* main.c */; };
@@ -15,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301392D72023F77A001CAC35 /* ocengine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocengine.h; sourceTree = "<group>"; };
+		301392D82023F77A001CAC35 /* ocengine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ocengine.c; sourceTree = "<group>"; };
 		303B75331C2A3C5800FEDE92 /* libouzel_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libouzel_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		303B76801C355A3B00FEDE92 /* libouzel_tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libouzel_tvos.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		304A8E251C237C30008B1151 /* libouzel_macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libouzel_macos.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		304A8E2A1C237C70008B1151 /* ouzel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ouzel.h; sourceTree = "<group>"; };
+		304A8E2A1C237C70008B1151 /* oc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oc.h; sourceTree = "<group>"; };
 		3093EE812022A020006D1667 /* default_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = default_config.h; sourceTree = "<group>"; };
 		3093EE862022A25C006D1667 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3093EE8A2022A2C7006D1667 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 				3093EE882022A269006D1667 /* ios */,
 				3093EE7920229F86006D1667 /* macos */,
 				3093EE892022A274006D1667 /* tvos */,
+				301392D72023F77A001CAC35 /* ocengine.h */,
+				301392D82023F77A001CAC35 /* ocengine.c */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -143,7 +153,7 @@
 				30A9C1371CAEBA420084C4BF /* localization */,
 				303B750F1C2882CA00FEDE92 /* math */,
 				304F92A21F4D89560063EEC0 /* network */,
-				304A8E2A1C237C70008B1151 /* ouzel.h */,
+				304A8E2A1C237C70008B1151 /* oc.h */,
 				303B750D1C28828600FEDE92 /* scene */,
 				30A5BF0C1CFCE3F800A977CA /* utils */,
 			);
@@ -224,6 +234,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301392D92023F77A001CAC35 /* ocengine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +242,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301392DB2023F77A001CAC35 /* ocengine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3093EE832022A020006D1667 /* default_config.h in Headers */,
-				304A8E501C237C70008B1151 /* ouzel.h in Headers */,
+				301392DA2023F77A001CAC35 /* ocengine.h in Headers */,
+				304A8E501C237C70008B1151 /* oc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3093EE8B2022A2C7006D1667 /* main.c in Sources */,
+				301392DC2023F77A001CAC35 /* ocengine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3093EE8D2022A2CE006D1667 /* main.c in Sources */,
+				301392DE2023F77A001CAC35 /* ocengine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3093EE872022A25C006D1667 /* main.c in Sources */,
+				301392DD2023F77A001CAC35 /* ocengine.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
