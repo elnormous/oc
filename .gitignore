@@ -5,6 +5,7 @@ samples/samples.xcodeproj/project.xcworkspace
 samples/samples.xcodeproj/xcuserdata
 build/Win32/
 build/x64/
+build/oc.VC.db
 samples/Win32/
 samples/x64/
 samples/ipch/

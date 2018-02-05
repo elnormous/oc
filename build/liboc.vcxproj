@@ -19,29 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\ouzel\audio\ocaudio.c" />
-    <ClCompile Include="..\ouzel\core\ocengine.c" />
-    <ClCompile Include="..\ouzel\core\windows\main.c" />
-    <ClCompile Include="..\ouzel\graphics\ocrenderer.c" />
-    <ClCompile Include="..\ouzel\input\ocinput.c" />
-    <ClCompile Include="..\ouzel\network\ocnetwork.c" />
-    <ClCompile Include="..\ouzel\scene\ocscene.c" />
+    <ClCompile Include="..\oc\audio\ocaudio.c" />
+    <ClCompile Include="..\oc\core\ocengine.c" />
+    <ClCompile Include="..\oc\core\windows\main.c" />
+    <ClCompile Include="..\oc\graphics\ocrenderer.c" />
+    <ClCompile Include="..\oc\input\ocinput.c" />
+    <ClCompile Include="..\oc\network\ocnetwork.c" />
+    <ClCompile Include="..\oc\scene\ocscene.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ouzel\audio\ocaudio.h" />
-    <ClInclude Include="..\ouzel\core\ocengine.h" />
-    <ClInclude Include="..\ouzel\default_config.h" />
-    <ClInclude Include="..\ouzel\graphics\ocrenderer.h" />
-    <ClInclude Include="..\ouzel\input\ocinput.h" />
-    <ClInclude Include="..\ouzel\network\ocnetwork.h" />
-    <ClInclude Include="..\ouzel\oc.h" />
-    <ClInclude Include="..\ouzel\scene\ocscene.h" />
+    <ClInclude Include="..\oc\audio\ocaudio.h" />
+    <ClInclude Include="..\oc\core\ocengine.h" />
+    <ClInclude Include="..\oc\default_config.h" />
+    <ClInclude Include="..\oc\graphics\ocrenderer.h" />
+    <ClInclude Include="..\oc\input\ocinput.h" />
+    <ClInclude Include="..\oc\network\ocnetwork.h" />
+    <ClInclude Include="..\oc\oc.h" />
+    <ClInclude Include="..\oc\scene\ocscene.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{c60ab6a6-67ff-4704-bdcd-de2f382fe251}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <ProjectName>libouzel</ProjectName>
-    <RootNamespace>ouzel</RootNamespace>
+    <ProjectName>liboc</ProjectName>
+    <RootNamespace>oc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -88,23 +88,23 @@
   <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
-    <IncludePath>..\ouzel\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
+    <IncludePath>..\oc\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GenerateManifest>false</GenerateManifest>
-    <IncludePath>..\ouzel\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
+    <IncludePath>..\oc\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
-    <IncludePath>..\ouzel\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
+    <IncludePath>..\oc\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <GenerateManifest>false</GenerateManifest>
-    <IncludePath>..\ouzel\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
+    <IncludePath>..\oc\;..\external\stb;..\external\khronos;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -122,7 +122,7 @@
     </Link>
     <Lib />
     <PreBuildEvent>
-      <Command>if not exist ..\ouzel\config.h copy ..\ouzel\default_config.h ..\ouzel\config.h</Command>
+      <Command>if not exist ..\oc\config.h copy ..\oc\default_config.h ..\oc\config.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,7 +141,7 @@
     </Link>
     <Lib />
     <PreBuildEvent>
-      <Command>if not exist ..\ouzel\config.h copy ..\ouzel\default_config.h ..\ouzel\config.h</Command>
+      <Command>if not exist ..\oc\config.h copy ..\oc\default_config.h ..\oc\config.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -160,7 +160,7 @@
     </Link>
     <Lib />
     <PreBuildEvent>
-      <Command>if not exist ..\ouzel\config.h copy ..\ouzel\default_config.h ..\ouzel\config.h</Command>
+      <Command>if not exist ..\oc\config.h copy ..\oc\default_config.h ..\oc\config.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -179,7 +179,7 @@
     </Link>
     <Lib />
     <PreBuildEvent>
-      <Command>if not exist ..\ouzel\config.h copy ..\ouzel\default_config.h ..\ouzel\config.h</Command>
+      <Command>if not exist ..\oc\config.h copy ..\oc\default_config.h ..\oc\config.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B18B5A2F-6CC0-405A-AE82-448B37BCFEBF}</ProjectGuid>
-    <RootNamespace>ouzel</RootNamespace>
+    <RootNamespace>oc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <ProjectName>samples</ProjectName>
   </PropertyGroup>
@@ -70,20 +70,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..;..\ouzel;$(IncludePath)</IncludePath>
+    <IncludePath>..;..\oc;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>..;..\ouzel;$(IncludePath)</IncludePath>
+    <IncludePath>..;..\oc;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>..;..\ouzel;$(IncludePath)</IncludePath>
+    <IncludePath>..;..\oc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>..;..\ouzel;$(IncludePath)</IncludePath>
+    <IncludePath>..;..\oc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -189,7 +189,7 @@ copy "$(ProjectDir)Resources\*" "$(OutDir)Resources\"</Command>
     <ResourceCompile Include="windows\samples.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\build\libouzel.vcxproj">
+    <ProjectReference Include="..\build\liboc.vcxproj">
       <Project>{c60ab6a6-67ff-4704-bdcd-de2f382fe251}</Project>
     </ProjectReference>
   </ItemGroup>
