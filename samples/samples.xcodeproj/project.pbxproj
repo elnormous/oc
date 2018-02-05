@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300984BF2027E84600BB0340 /* liboc_macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300984C02027E84600BB0340 /* liboc_macos.a */; };
+		300984C12027E84A00BB0340 /* liboc_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300984C22027E84A00BB0340 /* liboc_ios.a */; };
+		300984C32027E84E00BB0340 /* liboc_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300984C42027E84E00BB0340 /* liboc_tvos.a */; };
 		303647A11C418E4C0024DB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3036479F1C414EF50024DB5B /* Assets.xcassets */; };
 		303647A21C418E790024DB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304A8E161C237B96008B1151 /* Assets.xcassets */; };
 		303647A31C418E7C0024DB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303647A01C414F120024DB5B /* Assets.xcassets */; };
@@ -25,7 +28,6 @@
 		30419E8A1D202DC000A63759 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30419E891D202DC000A63759 /* OpenAL.framework */; };
 		304659F11E996AAD00D7FEA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304659F01E996AAD00D7FEA0 /* QuartzCore.framework */; };
 		305F6DBB1C66C50000B76A03 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305F6DBA1C66C50000B76A03 /* CoreVideo.framework */; };
-		30647D931D7D94EC00DC7E61 /* libouzel_macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B492A71CDF81700021E170 /* libouzel_macos.a */; };
 		307F9FF81F1E878D00BA73CB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30575AE71C3C98F50009C8A7 /* GameController.framework */; };
 		3098A5481E9FD54000528A54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AFE1521CB5DD0400478AA2 /* UIKit.framework */; };
 		3098A5491E9FD56A00528A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AFE14C1CB5DCDC00478AA2 /* Foundation.framework */; };
@@ -43,35 +45,36 @@
 		30AFE14B1CB5DCBD00478AA2 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AFE14A1CB5DCBD00478AA2 /* GameController.framework */; };
 		30AFE14F1CB5DCF100478AA2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AFE14E1CB5DCF100478AA2 /* OpenGLES.framework */; };
 		30AFE1511CB5DCF900478AA2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AFE1501CB5DCF900478AA2 /* QuartzCore.framework */; };
-		30B492AD1CDF81C70021E170 /* libouzel_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B492A91CDF81700021E170 /* libouzel_ios.a */; };
-		30B492AE1CDF81CA0021E170 /* libouzel_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B492AB1CDF81700021E170 /* libouzel_tvos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30B492A61CDF81700021E170 /* PBXContainerItemProxy */ = {
+		300984CA2027E89200BB0340 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 30B492A01CDF816F0021E170 /* ouzel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 304A8E251C237C30008B1151;
-			remoteInfo = ouzel_osx;
-		};
-		30B492A81CDF81700021E170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 30B492A01CDF816F0021E170 /* ouzel.xcodeproj */;
+			containerPortal = 30B492A01CDF816F0021E170 /* oc.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 303B75331C2A3C5800FEDE92;
-			remoteInfo = ouzel_ios;
+			remoteInfo = liboc_ios;
 		};
-		30B492AA1CDF81700021E170 /* PBXContainerItemProxy */ = {
+		300984CC2027E89200BB0340 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 30B492A01CDF816F0021E170 /* ouzel.xcodeproj */;
+			containerPortal = 30B492A01CDF816F0021E170 /* oc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 304A8E251C237C30008B1151;
+			remoteInfo = liboc_macos;
+		};
+		300984CE2027E89200BB0340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B492A01CDF816F0021E170 /* oc.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 303B76801C355A3B00FEDE92;
-			remoteInfo = ouzel_tvos;
+			remoteInfo = liboc_tvos;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		300984C02027E84600BB0340 /* liboc_macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liboc_macos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		300984C22027E84A00BB0340 /* liboc_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liboc_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		300984C42027E84E00BB0340 /* liboc_tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liboc_tvos.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3036479F1C414EF50024DB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303647A01C414F120024DB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303B74ED1C27F6A100FEDE92 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -113,7 +116,7 @@
 		30AFE14E1CB5DCF100478AA2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		30AFE1501CB5DCF900478AA2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		30AFE1521CB5DD0400478AA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		30B492A01CDF816F0021E170 /* ouzel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ouzel.xcodeproj; path = ../build/ouzel.xcodeproj; sourceTree = "<group>"; };
+		30B492A01CDF816F0021E170 /* oc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oc.xcodeproj; path = ../build/oc.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B492AD1CDF81C70021E170 /* libouzel_ios.a in Frameworks */,
+				300984C12027E84A00BB0340 /* liboc_ios.a in Frameworks */,
 				30419E3F1D1A106900A63759 /* AudioToolbox.framework in Frameworks */,
 				30419E691D1F726C00A63759 /* AVFoundation.framework in Frameworks */,
 				3098A5491E9FD56A00528A54 /* Foundation.framework in Frameworks */,
@@ -138,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B492AE1CDF81CA0021E170 /* libouzel_tvos.a in Frameworks */,
+				300984C32027E84E00BB0340 /* liboc_tvos.a in Frameworks */,
 				30419E3D1D1A106000A63759 /* AudioToolbox.framework in Frameworks */,
 				30419E6B1D1F736800A63759 /* AVFoundation.framework in Frameworks */,
 				30AFE1411CB5DC7B00478AA2 /* Foundation.framework in Frameworks */,
@@ -155,13 +158,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300984BF2027E84600BB0340 /* liboc_macos.a in Frameworks */,
 				307F9FF81F1E878D00BA73CB /* GameController.framework in Frameworks */,
 				309BA31E1F1841E8006F2240 /* AudioUnit.framework in Frameworks */,
 				30419E631D1F3DED00A63759 /* AudioToolbox.framework in Frameworks */,
 				309BA31A1F184198006F2240 /* CoreAudio.framework in Frameworks */,
 				3098A5501EA01B4B00528A54 /* IOKit.framework in Frameworks */,
 				304659F11E996AAD00D7FEA0 /* QuartzCore.framework in Frameworks */,
-				30647D931D7D94EC00DC7E61 /* libouzel_macos.a in Frameworks */,
 				305F6DBB1C66C50000B76A03 /* CoreVideo.framework in Frameworks */,
 				303B74F31C27F6EB00FEDE92 /* Cocoa.framework in Frameworks */,
 				30AFE1321CB5DC2B00478AA2 /* Metal.framework in Frameworks */,
@@ -173,9 +176,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300984C52027E89200BB0340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300984CB2027E89200BB0340 /* liboc_ios.a */,
+				300984CD2027E89200BB0340 /* liboc_macos.a */,
+				300984CF2027E89200BB0340 /* liboc_tvos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		303B74EF1C27F6B000FEDE92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				300984C42027E84E00BB0340 /* liboc_tvos.a */,
+				300984C22027E84A00BB0340 /* liboc_ios.a */,
+				300984C02027E84600BB0340 /* liboc_macos.a */,
 				309BA31D1F1841E8006F2240 /* AudioUnit.framework */,
 				309BA31B1F1841CB006F2240 /* CoreAudioKit.framework */,
 				309BA3191F184198006F2240 /* CoreAudio.framework */,
@@ -224,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				303B74EF1C27F6B000FEDE92 /* Frameworks */,
-				30B492A01CDF816F0021E170 /* ouzel.xcodeproj */,
+				30B492A01CDF816F0021E170 /* oc.xcodeproj */,
 				304A8E0B1C237B95008B1151 /* Products */,
 				304A8EB21C2765C4008B1151 /* Resources */,
 				30E75F421D7B78DB000300D4 /* samples */,
@@ -264,16 +280,6 @@
 				30575A961C38C90F0009C8A7 /* Info.plist */,
 			);
 			path = tvos;
-			sourceTree = "<group>";
-		};
-		30B492A11CDF816F0021E170 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				30B492A91CDF81700021E170 /* libouzel_ios.a */,
-				30B492A71CDF81700021E170 /* libouzel_macos.a */,
-				30B492AB1CDF81700021E170 /* libouzel_tvos.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		30E75F421D7B78DB000300D4 /* samples */ = {
@@ -369,8 +375,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 30B492A11CDF816F0021E170 /* Products */;
-					ProjectRef = 30B492A01CDF816F0021E170 /* ouzel.xcodeproj */;
+					ProductGroup = 300984C52027E89200BB0340 /* Products */;
+					ProjectRef = 30B492A01CDF816F0021E170 /* oc.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -383,25 +389,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		30B492A71CDF81700021E170 /* libouzel_macos.a */ = {
+		300984CB2027E89200BB0340 /* liboc_ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libouzel_macos.a;
-			remoteRef = 30B492A61CDF81700021E170 /* PBXContainerItemProxy */;
+			path = liboc_ios.a;
+			remoteRef = 300984CA2027E89200BB0340 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		30B492A91CDF81700021E170 /* libouzel_ios.a */ = {
+		300984CD2027E89200BB0340 /* liboc_macos.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libouzel_ios.a;
-			remoteRef = 30B492A81CDF81700021E170 /* PBXContainerItemProxy */;
+			path = liboc_macos.a;
+			remoteRef = 300984CC2027E89200BB0340 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		30B492AB1CDF81700021E170 /* libouzel_tvos.a */ = {
+		300984CF2027E89200BB0340 /* liboc_tvos.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libouzel_tvos.a;
-			remoteRef = 30B492AA1CDF81700021E170 /* PBXContainerItemProxy */;
+			path = liboc_tvos.a;
+			remoteRef = 300984CE2027E89200BB0340 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -472,7 +478,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_ios;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
@@ -491,7 +497,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_ios;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
@@ -509,7 +515,7 @@
 				GCC_PREFIX_HEADER = prefix.h;
 				INFOPLIST_FILE = tvos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_tvos;
 				SDKROOT = appletvos;
 				STRIP_PNG_TEXT = NO;
@@ -527,7 +533,7 @@
 				GCC_PREFIX_HEADER = prefix.h;
 				INFOPLIST_FILE = tvos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_tvos;
 				SDKROOT = appletvos;
 				STRIP_PNG_TEXT = NO;
@@ -584,7 +590,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../ouzel/;
+				HEADER_SEARCH_PATHS = ../oc/;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -635,7 +641,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../ouzel/;
+				HEADER_SEARCH_PATHS = ../oc/;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -651,7 +657,7 @@
 				GCC_PREFIX_HEADER = prefix.h;
 				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_macos;
 			};
 			name = Debug;
@@ -665,7 +671,7 @@
 				GCC_PREFIX_HEADER = prefix.h;
 				INFOPLIST_FILE = macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ouzel.samples;
+				PRODUCT_BUNDLE_IDENTIFIER = org.oc.samples;
 				PRODUCT_NAME = samples_macos;
 			};
 			name = Release;

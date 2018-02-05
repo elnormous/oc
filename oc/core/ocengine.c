@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "ocengine.h"
 
-void ouzel_main(int argc, char** argv);
+void oc_main(int argc, char** argv);
 
 struct OcEngine* oc_engine;
 
@@ -12,7 +12,7 @@ int oc_engine_init(int argc, char* argv[])
 {
     oc_engine = malloc(sizeof(OcEngine));
 
-    ouzel_main(argc, argv);
+    oc_main(argc, argv);
 
     return 1;
 }
