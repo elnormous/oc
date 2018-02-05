@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\ouzel\audio\ocaudio.c">
+      <Filter>ouzel\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\core\ocengine.c">
+      <Filter>ouzel\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\ocrenderer.c">
+      <Filter>ouzel\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\input\ocinput.c">
+      <Filter>ouzel\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\network\ocnetwork.c">
+      <Filter>ouzel\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\scene\ocscene.c">
+      <Filter>ouzel\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\core\windows\main.c">
+      <Filter>ouzel\core\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ouzel\audio\ocaudio.h">
+      <Filter>ouzel\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\core\ocengine.h">
+      <Filter>ouzel\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\ocrenderer.h">
+      <Filter>ouzel\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\input\ocinput.h">
+      <Filter>ouzel\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\network\ocnetwork.h">
+      <Filter>ouzel\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\scene\ocscene.h">
+      <Filter>ouzel\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\default_config.h">
+      <Filter>ouzel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\oc.h">
+      <Filter>ouzel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ouzel">
+      <UniqueIdentifier>{609eeaba-c2d7-4b6b-bc79-aec5b84b0595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\animators">
+      <UniqueIdentifier>{5332c648-b136-470b-8314-08355caeac58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\audio">
+      <UniqueIdentifier>{ec575031-07a5-4602-a6c6-e9063626a451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\core">
+      <UniqueIdentifier>{f41cb5c8-0778-4b99-9841-eb6fb193a259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\events">
+      <UniqueIdentifier>{8dace8b8-7b5d-43a0-a7fa-7c3ed3aad611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\graphics">
+      <UniqueIdentifier>{7f740e6a-68dd-4776-96f6-06b3b0dd27b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\files">
+      <UniqueIdentifier>{10c294c8-1814-4941-8dd3-2330844019bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\gui">
+      <UniqueIdentifier>{08dca6a3-32ca-4345-8dec-9537d9ef81d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\input">
+      <UniqueIdentifier>{a290bb2d-8a74-4429-8dc3-c69500f1b41b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\localization">
+      <UniqueIdentifier>{a707cf14-2a70-4fe9-a4f8-e4deaf184edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\math">
+      <UniqueIdentifier>{98914365-06b8-4dd3-a075-37217c34d835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\scene">
+      <UniqueIdentifier>{f525ad83-7ab7-479b-9336-814faadb78a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\utils">
+      <UniqueIdentifier>{0c6ae549-dc69-45d8-b195-61fa009019b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\network">
+      <UniqueIdentifier>{57b86987-14d5-4d4a-97e6-c33cb1e9f749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\assets">
+      <UniqueIdentifier>{3321c286-5355-42bc-a945-fafc9b4abbb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ouzel\core\windows">
+      <UniqueIdentifier>{5de125a7-f163-466f-9dc1-85a76634199b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

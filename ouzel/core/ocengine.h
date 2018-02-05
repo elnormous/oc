@@ -5,6 +5,7 @@
 
 typedef struct _OcEngine
 {
+    void* engine;
 } OcEngine;
 
 extern struct OcEngine* oc_engine;

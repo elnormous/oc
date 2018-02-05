@@ -5,5 +5,5 @@
 
 struct OcRenderer
 {
-    
+    void* renderer;
 };

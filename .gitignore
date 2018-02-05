@@ -3,3 +3,10 @@ build/ouzel.xcodeproj/xcuserdata
 config.h
 samples/samples.xcodeproj/project.xcworkspace
 samples/samples.xcodeproj/xcuserdata
+build/Win32/
+build/x64/
+samples/Win32/
+samples/x64/
+samples/ipch/
+samples/samples.VC.VC.opendb
+samples/samples.VC.db
