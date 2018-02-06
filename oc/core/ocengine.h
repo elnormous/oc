@@ -5,10 +5,11 @@
 
 typedef struct _OcEngine
 {
-    void* engine;
+    int running;
 } OcEngine;
 
-extern struct OcEngine* oc_engine;
+extern OcEngine* oc_engine;
 
-int oc_engine_init(int argc, char* argv[]);
-int oc_engine_free(void);
+void oc_main(int argc, char** argv);
+
+int oc_engine_init(OcEngine* engine, int argc, char* argv[]);

@@ -1,27 +1,15 @@
 // Copyright (C) 2018 Elviss Strazdins
 // This file is part of the OC engine.
 
-#include <stdlib.h>
 #include "ocengine.h"
 
-void oc_main(int argc, char** argv);
+OcEngine* oc_engine;
 
-struct OcEngine* oc_engine;
-
-int oc_engine_init(int argc, char* argv[])
+int oc_engine_init(OcEngine* engine, int argc, char** argv)
 {
-    oc_engine = malloc(sizeof(OcEngine));
+    oc_engine = engine;
 
     oc_main(argc, argv);
-
-    return 1;
-}
-
-int oc_engine_free(void)
-{
-    if (!oc_engine) return 0;
-
-    free(oc_engine);
 
     return 1;
 }

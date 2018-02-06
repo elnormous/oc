@@ -37,6 +37,8 @@
 		300984B92024009400BB0340 /* ocnetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = 300984B52024009400BB0340 /* ocnetwork.c */; };
 		300984BA2024009400BB0340 /* ocnetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = 300984B52024009400BB0340 /* ocnetwork.c */; };
 		300984BB2024009400BB0340 /* ocnetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = 300984B52024009400BB0340 /* ocnetwork.c */; };
+		300984D4202936CA00BB0340 /* ocenginemacos.h in Headers */ = {isa = PBXBuildFile; fileRef = 300984D2202936CA00BB0340 /* ocenginemacos.h */; };
+		300984D5202936CA00BB0340 /* ocenginemacos.m in Sources */ = {isa = PBXBuildFile; fileRef = 300984D3202936CA00BB0340 /* ocenginemacos.m */; };
 		301392D92023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
 		301392DA2023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
 		301392DB2023F77A001CAC35 /* ocengine.h in Headers */ = {isa = PBXBuildFile; fileRef = 301392D72023F77A001CAC35 /* ocengine.h */; };
@@ -61,6 +63,8 @@
 		300984AC2023FDDC00BB0340 /* ocaudio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ocaudio.c; sourceTree = "<group>"; };
 		300984B42024009400BB0340 /* ocnetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocnetwork.h; sourceTree = "<group>"; };
 		300984B52024009400BB0340 /* ocnetwork.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ocnetwork.c; sourceTree = "<group>"; };
+		300984D2202936CA00BB0340 /* ocenginemacos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocenginemacos.h; sourceTree = "<group>"; };
+		300984D3202936CA00BB0340 /* ocenginemacos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ocenginemacos.m; sourceTree = "<group>"; };
 		301392D72023F77A001CAC35 /* ocengine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ocengine.h; sourceTree = "<group>"; };
 		301392D82023F77A001CAC35 /* ocengine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ocengine.c; sourceTree = "<group>"; };
 		303B75331C2A3C5800FEDE92 /* liboc_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboc_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				3093EE862022A25C006D1667 /* main.c */,
+				300984D2202936CA00BB0340 /* ocenginemacos.h */,
+				300984D3202936CA00BB0340 /* ocenginemacos.m */,
 			);
 			path = macos;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				300984B72024009400BB0340 /* ocnetwork.h in Headers */,
 				300984962023FCB600BB0340 /* ocrenderer.h in Headers */,
 				3009849E2023FD6200BB0340 /* ocinput.h in Headers */,
+				300984D4202936CA00BB0340 /* ocenginemacos.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +500,7 @@
 				300984A12023FD6200BB0340 /* ocinput.c in Sources */,
 				300984992023FCB600BB0340 /* ocrenderer.c in Sources */,
 				3093EE872022A25C006D1667 /* main.c in Sources */,
+				300984D5202936CA00BB0340 /* ocenginemacos.m in Sources */,
 				300984A92023FD9C00BB0340 /* ocscene.c in Sources */,
 				300984BA2024009400BB0340 /* ocnetwork.c in Sources */,
 				300984B12023FDDC00BB0340 /* ocaudio.c in Sources */,

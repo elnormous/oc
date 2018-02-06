@@ -2,11 +2,17 @@
 // This file is part of the OC engine.
 
 #include <stdlib.h>
-#include "core/ocengine.h"
+#include "core/macos/ocenginemacos.h"
 
 int main(int argc, char* argv[])
 {
-    if (!oc_engine_init(argc, argv)) return EXIT_FAILURE;
+    OcEngineMacOS* oc_engine_macos = malloc(sizeof(OcEngineMacOS));
 
-    return oc_engine_free() ? EXIT_SUCCESS : EXIT_FAILURE;
+    if (!oc_engine_macos_init(oc_engine_macos, argc, argv))
+    {
+        oc_engine_macos_free(oc_engine_macos);
+        return EXIT_FAILURE;
+    }
+
+    return oc_engine_macos_free(oc_engine_macos) ? EXIT_SUCCESS : EXIT_FAILURE;
 }
