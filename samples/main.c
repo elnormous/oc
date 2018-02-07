@@ -6,4 +6,5 @@ const char* APPLICATION_NAME = "samples";
 
 void oc_main(int argc, char** argv)
 {
+    oc_log(INFO, "oc_main");
 }
