@@ -12,4 +12,4 @@ typedef enum _OcLogLevel
     ALL
 } OcLogLevel;
 
-void oc_log(OcLogLevel log_level, const char* format, ...);
+void ocLog(OcLogLevel logLevel, const char* format, ...);

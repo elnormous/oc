@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-    if (!oc_engine_init(argc, argv)) return EXIT_FAILURE;
+    if (!ocEngineInit(argc, argv)) return EXIT_FAILURE;
 
-    return oc_engine_free() ? EXIT_SUCCESS : EXIT_FAILURE;
+    return ocEngineFree() ? EXIT_SUCCESS : EXIT_FAILURE;
 }

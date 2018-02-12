@@ -3,13 +3,13 @@
 
 #include "ocengine.h"
 
-OcEngine* oc_engine;
+OcEngine* ocEngine;
 
-int oc_engine_init(OcEngine* engine, int argc, char** argv)
+int ocEngineInit(OcEngine* engine, int argc, char** argv)
 {
-    oc_engine = engine;
+    ocEngine = engine;
 
-    oc_main(argc, argv);
+    ocMain(argc, argv);
 
     return 1;
 }

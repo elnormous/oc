@@ -6,13 +6,13 @@
 
 int main(int argc, char* argv[])
 {
-    OcEngineMacOS* oc_engine_macos = malloc(sizeof(OcEngineMacOS));
+    OcEngineMacOS* ocEngineMacos = malloc(sizeof(OcEngineMacOS));
 
-    if (!oc_engine_macos_init(oc_engine_macos, argc, argv))
+    if (!ocEngineMacOSInit(ocEngineMacos, argc, argv))
     {
-        oc_engine_macos_free(oc_engine_macos);
+        ocEngineMacOSFree(ocEngineMacos);
         return EXIT_FAILURE;
     }
 
-    return oc_engine_macos_free(oc_engine_macos) ? EXIT_SUCCESS : EXIT_FAILURE;
+    return ocEngineMacOSFree(ocEngineMacos) ? EXIT_SUCCESS : EXIT_FAILURE;
 }

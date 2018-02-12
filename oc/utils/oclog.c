@@ -13,19 +13,19 @@
 
 #include "oclog.h"
 
-void oc_log(OcLogLevel log_level, const char* format, ...)
+void ocLog(OcLogLevel logLevel, const char* format, ...)
 {
 #if DEBUG
     va_list vl;
     char* str;
     FILE* f = stdout;
     int n;
-    const int init_size = 32;
+    const int initSize = 32;
 #if _WIN32
-    wchar_t* sz_buffer;
+    wchar_t* szBuffer;
 #endif
 
-    switch (log_level)
+    switch (logLevel)
     {
         case ERR:
         case WARN:
@@ -39,15 +39,15 @@ void oc_log(OcLogLevel log_level, const char* format, ...)
             break;
     }
 
-    str = malloc(init_size);
+    str = malloc(initSize);
 
     va_start(vl, format);
-    n = vsnprintf(str, init_size - 1, format, vl);
+    n = vsnprintf(str, initSize - 1, format, vl);
     va_end(vl);
 
     if (n < 0) return;
 
-    if (n + 2 > init_size)
+    if (n + 2 > initSize)
     {
         str = realloc(str, (size_t)n + 2);
 
@@ -61,14 +61,14 @@ void oc_log(OcLogLevel log_level, const char* format, ...)
     fprintf(f, "%s", str);
 
 #if _WIN32
-    sz_buffer = malloc((n + 2) * sizeof(wchar_t));
-    if (MultiByteToWideChar(CP_UTF8, 0, str, -1, sz_buffer, n + 2) == 0)
+    szBuffer = malloc((n + 2) * sizeof(wchar_t));
+    if (MultiByteToWideChar(CP_UTF8, 0, str, -1, szBuffer, n + 2) == 0)
     {
         return;
     }
 
-    OutputDebugStringW(sz_buffer);
-    free(sz_buffer);
+    OutputDebugStringW(szBuffer);
+    free(szBuffer);
 #endif
     free(str);
 #endif

@@ -6,7 +6,7 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-    if (!oc_engine_init(NULL, NULL)) return EXIT_FAILURE;
+    if (!ocEngineInit(NULL, NULL)) return EXIT_FAILURE;
 
-    return oc_engine_free() ? EXIT_SUCCESS : EXIT_FAILURE;
+    return ocEngineFree() ? EXIT_SUCCESS : EXIT_FAILURE;
 }

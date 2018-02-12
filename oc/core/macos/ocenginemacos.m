@@ -30,9 +30,9 @@
 
 @end
 
-int oc_engine_macos_init(OcEngineMacOS* engine, int argc, char* argv[])
+int ocEngineMacOSInit(OcEngineMacOS* engine, int argc, char* argv[])
 {
-    if (!oc_engine_init(&engine->engine, argc, argv))
+    if (!ocEngineInit(&engine->engine, argc, argv))
     {
         return 0;
     }
@@ -48,7 +48,7 @@ int oc_engine_macos_init(OcEngineMacOS* engine, int argc, char* argv[])
     return 1;
 }
 
-int oc_engine_macos_free(OcEngineMacOS* engine)
+int ocEngineMacOSFree(OcEngineMacOS* engine)
 {
     if (!engine) return 0;
 
